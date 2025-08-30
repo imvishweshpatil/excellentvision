@@ -85,7 +85,7 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing:antialiased;
-	color: #263a4f;
+	color: #18314d;
 }
 .bg-dark h1,
 .bg-dark h2,
@@ -2535,4 +2535,129 @@ blockquote span{
   .why-choose-us .right { width: 100%; }
   .left img { border-radius: 10px; }
   .title { font-size: 22px; }
+
+  .footer-services {
+    margin: 0 !important;
+  }
+}
+
+/* Footer Services */
+.footer-services {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+/* Title underline */
+.footer-services .widget-title {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  font-size: 24px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+.footer-services .widget-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px; /* underline length */
+  height: 2px;
+  background: #b07d54; /* accent color */
+}
+
+/* Links with arrow */
+.widget-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget-links li {
+  margin: 8px 0;
+  position: relative;
+  padding-left: 18px; /* space for arrow */
+}
+
+.widget-links li::before {
+  content: "›"; /* arrow symbol */
+  position: absolute;
+  left: 0;
+  color: #b07d54; /* arrow color */
+  font-size: 16px;
+}
+
+.widget-links a {
+  color: #ff8623 !important;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.widget-links a:hover {
+  color: #bfca02 !important;
+}
+
+/* Breadcrumb styles */
+.breadcrumb-nav {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #ddd;
+}
+
+.breadcrumb-nav a {
+  color: #b07d54; /* accent color */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-nav a:hover {
+  color: #fff; /* on hover */
+}
+
+.breadcrumb-nav .separator {
+  margin: 0 6px;
+  color: #aaa;
+}
+
+.breadcrumb-nav .current {
+  color: #fff; 
+  font-weight: 600;
+}
+
+/* Grid for Projects */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px; /* gap fix */
+}
+
+.project-col {
+  width: 33.333%;   /* 3 per row */
+  padding: 15px;
+}
+
+.project-item img {
+  width: 100%;
+  height: 380px;    /* bigger image height */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Responsive: 2 in row on tablets, 1 on small screens */
+@media (max-width: 991px) {
+  .project-col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .project-col {
+    width: 100%;
+  }
 }
