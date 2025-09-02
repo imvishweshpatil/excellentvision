@@ -653,7 +653,7 @@ ul.nav > li > a.active{
     margin-top: 40px;
 }
 .about-bg{
-    background-image: url(../img/about.jpg);
+    background-image: url(../img/10yearexo.jpeg);
     background-position: top right;
     background-repeat: no-repeat;
     width: 100%;
@@ -661,6 +661,7 @@ ul.nav > li > a.active{
     top: 0;
     right: 0;
     position: relative;
+    border-radius: 10px;
 }
 .dots{
     position: absolute;
