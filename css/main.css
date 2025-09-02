@@ -2661,27 +2661,32 @@ blockquote span{
 }
 
 .whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 110px;
-    right: 40px;
-    background-color: #25D366;
-    color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+  position: fixed;
+  bottom: 110px;
+  right: 40px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50px; /* pill shape */
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
 
-  .whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-    color: #fff;
-    text-decoration: none;
-  }
+.whatsapp-float i {
+  font-size: 22px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  color: #fff;
+  text-decoration: none;
+}
+
