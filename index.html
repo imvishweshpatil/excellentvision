@@ -138,7 +138,7 @@
                 </div>  
             </div><!--Slide-1-->
             <div class="single-slide">
-                <div class="bg-img kenburns-top-right" style="background-image: url(img/slider-2.jpg);"></div>
+                <div class="bg-img kenburns-top-right" style="background-image: url(img/sl.webp);"></div>
                 <div class="overlay"></div>
                 <div class="slider-content-wrap d-flex align-items-center text-left">
                     <div class="container">
@@ -410,7 +410,7 @@
                 </div>
               </div>
             </div>
-</section>
+        </section>
         
         <!-- <section class="team-section padding">
             <div class="container">
@@ -695,6 +695,24 @@
 		<a data-scroll href="#header" id="scroll-to-top"><i class="arrow_carrot-up"></i></a>
 	
 		<!-- jQuery Lib -->
+
+        <script>
+         document.addEventListener("DOMContentLoaded", () => {
+          const skills = document.querySelectorAll(".progress-fill");
+
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.style.width = entry.target.style.getPropertyValue("--pct");
+              }
+            });
+          }, { threshold: 0.5 });
+      
+          skills.forEach(skill => {
+            observer.observe(skill);
+          });
+        });
+        </script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 		<!-- Bootstrap JS -->
 		<script src="js/vendor/bootstrap.min.js"></script>
