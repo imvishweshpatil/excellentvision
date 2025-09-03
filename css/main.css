@@ -2690,3 +2690,29 @@ blockquote span{
   text-decoration: none;
 }
 
+/* Hide mobile extras by default */
+.mobile-extra {
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 15px;
+  color: #333;
+}
+
+.mobile-extra i {
+  margin-right: 8px;
+  color: #ff6515; /* theme accent color */
+}
+
+/* Show inside nav only on mobile/tablet */
+@media (max-width: 991px) {
+  .mobile-extra {
+    display: block;
+  }
+
+  /* Hide the desktop phone on mobile (optional) */
+  .nav > .phone {
+    display: none;
+  }
+}
+    
