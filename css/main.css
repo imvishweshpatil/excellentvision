@@ -2715,4 +2715,18 @@ blockquote span{
     display: none;
   }
 }
-    
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f39c12; /* change to your brand color */
+}
