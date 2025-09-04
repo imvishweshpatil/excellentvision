@@ -2581,7 +2581,7 @@ blockquote span{
 }
 
 .widget-links li::before {
-  content: "›"; /* arrow symbol */
+  /* content: "›"; arrow symbol */
   position: absolute;
   left: 0;
   color: #b07d54; /* arrow color */
